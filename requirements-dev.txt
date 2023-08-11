@@ -1,0 +1,8 @@
+apache-airflow==2.2.0
+botocore==1.31.23
+boto3==1.28.23
+moto==4.1.14
+pandas==2.0.3
+pytest==7.4.0
+flake8==6.1.0
+black==23.7.0

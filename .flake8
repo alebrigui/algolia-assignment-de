@@ -1,0 +1,13 @@
+[flake8]
+include =
+    plugins,
+    dags,
+    tests
+
+exclude =
+    __pycache__,
+    *.venv,
+    *.egg-info,
+    .git
+
+max-line-length = 88
