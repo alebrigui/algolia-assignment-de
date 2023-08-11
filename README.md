@@ -6,20 +6,26 @@ This assignment aims to implement a robust ETL pipeline that fetches Shopify con
 The pipeline is constructed using Apache Airflow and contains several operations from data fetching, transformation, database table creation, data insertion, to final cleanup.
 
 ## Setup and running testss
-Initialize environment:
+**Initialize environment:**
 ```
 make init 
 ```
 
-Run tests:
+**Run tests:**
 ```
 make test
 ```
 
-For the remaining commands:
+**For the remaining commands:**
 ```
 make help
 ```
+
+**To run Airflow:**
+```
+docker-compose up
+```
+
 ## DAG Overview
 
 The DAG, identified as `s3_to_postgres`, consists of the following tasks:
