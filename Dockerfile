@@ -8,5 +8,3 @@ ENV DEBIAN_FRONTEND=noninteractive \
 
 RUN apt-get -y update \
  && apt-get -y install python-pip libpq-dev postgresql-client python3-dev python3-distutils python3-apt
-
-python -m pip install --upgrade pip
