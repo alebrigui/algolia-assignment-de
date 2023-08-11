@@ -44,6 +44,7 @@ The DAG, identified as `s3_to_postgres`, consists of the following tasks:
 5. **Connection to S3**: Since the S3 Bucket is public the data, no credentials were used, in a production setting this should be avoided and an S3Hook should be used alongisde an Airflow Connection with the appropriate credentials.
 6. **Security concerns**: Currently the docker-compose.yml file contains multiple secrets that should be better stored in a .env added to the .gitignore.
 7. **Improve type hinting**: Not all args and variables are covered with type hinting, this could be an improvement.
+8. **Schema Evolution**: The current script is not able to handle schema evolution, if the schema changes the pipeline might break. This could be handled by using a schema evolution tool, or coding logic that can detect schema changes and apply them. Using connectors (Airbyte, Singer) could also solve this issue.
 
 ### Suggested Enhancements
 
