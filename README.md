@@ -67,4 +67,4 @@ Instead of processing the file as a whole, it could be partitioned, and each par
 In this case Airflow is used only as the Orchestrator, and the actual processing would happen in a Spark Context inside the same or a different more powerful cluster (Glue, Databricks...)
 
 ### Use an ELT approach
-Instead of transforming the data on Airflow workers, we can use Airflow to orchestrate a COPY command to cloud datawarehouse where the csvs would be loaded into STAGING schemas. Processing could then be inside of the warehouse using 
+Instead of transforming the data on Airflow workers, we can use Airflow to orchestrate a COPY command to cloud datawarehouse where the csvs would be loaded into STAGING schemas. Processing could then be inside of the warehouse using tools such as dbt.
